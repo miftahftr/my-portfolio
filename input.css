@@ -1,0 +1,48 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reveal animations baseline */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .7s ease, transform .7s cubic-bezier(.2, .9, .3, 1);
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: none;
+}
+
+/* small helper for gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, #8B5CF6, #06B6D4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* neon glow hover */
+.glow-hover:hover {
+  box-shadow: 0 8px 40px rgba(139, 92, 246, 0.18);
+  transform: translateY(-4px) scale(1.02);
+}
+
+/* decorative blob blur */
+.blob {
+  filter: blur(36px);
+  opacity: .6;
+  mix-blend-mode: screen;
+}
+
+/* Improve focus state for accessibility */
+:focus-visible {
+  outline: 2px solid #A78BFA;
+  outline-offset: 2px;
+  border-radius: 4px;
+}

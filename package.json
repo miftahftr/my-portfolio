@@ -1,0 +1,12 @@
+{
+  "name": "yourfox-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.15",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49"
+  }
+}
